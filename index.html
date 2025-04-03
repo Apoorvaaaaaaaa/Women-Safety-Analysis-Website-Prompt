@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIH WEBSITE - Easy Tutorials</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="header">
+         <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <a class="hero-btn">REGISTER/LOGIN</a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">GPS TRACKER</a></li>
+                    <li><a href="#">NEARBY POLICE STATION ADDRESS</a></li>
+                    <li><a href="#">HELPLINE NUMBERS</a></li>
+                    <li><a href="#">HAND GESTURES</a></li>
+                    <li><a href="#">PHONE SHAKE</a></li>
+                     </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">   
+            <h1>WOMEN SAFETY ANALYSIS</h1>
+            <p>Women and girls have been experiencing a lot of violence and harassment in public places in various cities starting from stalking and leading to sexual harassment or sexual assault.</p>
+            <a href="contact.html" class="hero-btn">Visit Us to Know More</a>
+        </div>
+    </section>
+
+<!---------- features ----------->
+    
+    <section class="FEATURES">
+        <h1>Features Provided</h1>
+        <p>We have various features available for you safety.</p>
+        <div class="row">
+            <div class="features-col">
+                <h3>SOS</h3>
+                <p>Click this to give instant emergency SMS.</p>
+
+            </div>
+            <div class="features-col">
+                <h3>GPS</h3>
+                <p>Helps tracking your location for more safety.</p>
+
+            </div>
+            <div class="features-col">
+                <h3>PHONE SHAKING ALARM</h3>
+                <p>Shake your phone 5 times if SOS can't be done at that time.</p>
+
+            </div>
+            <div class="features-col">
+                <h3>HAND GESTURES</h3>
+                <p>Show hand gestures if you're facing any problem.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>
